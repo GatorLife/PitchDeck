@@ -257,13 +257,16 @@ blockquote {
   color: var(--gator-muted);
 }
 
-/* Citation/Footer text */
+/* Citation/Footer text - Absolute positioned at bottom-left */
 .citation {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
   font-size: 0.7rem;
   color: var(--gator-muted);
-  margin-top: auto;
   padding-top: 0.5rem;
   border-top: 1px solid var(--gator-border);
+  max-width: calc(100% - 60px); /* Prevent overflow on right edge */
 }
 
 /* Stat/Metric boxes */
