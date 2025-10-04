@@ -6,11 +6,11 @@ class: text-center
 # **GATOR Thesis**
 ## From "I Think" to "I Know"
 
-<div class="text-xl text-primary mt-4 mb-4 text-glow">
+<div class="text-xl text-primary mt-8 mb-8 text-glow">
 "We trained" → "We're mission-ready" <strong>with evidence</strong>
 </div>
 
-<div class="grid-cols-3 mt-6">
+<div class="grid-cols-3 mt-10">
 
 <div class="gator-card">
 <div class="text-primary text-lg font-bold mb-1">📋</div>

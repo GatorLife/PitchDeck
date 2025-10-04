@@ -4,7 +4,7 @@ layout: default
 
 # **Market Reality: We Train, But Can't Verify Effects**
 
-<div class="grid-cols-2 mt-2">
+<div class="mt-6" style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 70%; margin-left: auto; margin-right: auto;">
 
 <div class="gator-card">
 

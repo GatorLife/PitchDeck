@@ -1,27 +1,27 @@
 ---
-layout: two-cols
+layout: default
 ---
 
-# **Problem: Three Gaps That Keep Commanders Guessing**
+# **Three Gaps That Keep Commanders Guessing**
 
-<div class="mt-2">
+<div class="mt-6" style="display: flex; flex-direction: column; gap: 1rem;">
 
-## 🎯 **Standards Drift & Churn**
-USCYBERCOM's JQR/JCT&CS cycle updates continuously (annual review; J7 notifies Services)—units chase a moving target.
-
-## 👥 **Subjective Evaluation**
-Air Force runs **ESAP** program to police examiner standardization—because objectivity varies at squadron level.
-
+<div>
+<h2 class="mb-1">🎯 <strong>Standards Drift & Churn</strong></h2>
+<p style="margin: 0;">USCYBERCOM's JQR/JCT&CS cycle updates continuously (annual review; J7 notifies Services)—units chase a moving target.</p>
 </div>
 
-::right::
+<div>
+<h2 class="mb-1">👥 <strong>Subjective Evaluation</strong></h2>
+<p style="margin: 0;">Air Force runs <strong>ESAP</strong> program to police examiner standardization—because objectivity varies at squadron level.</p>
+</div>
 
-<div class="mt-8">
+<div>
+<h2 class="mb-1">⚡ <strong>Speed-of-Change Gap</strong></h2>
+<p style="margin: 0;">Threats, tools, and TTPs outpace static syllabi. DoD continues to push for better measurement & software/cyber metrics.</p>
+</div>
 
-## ⚡ **Speed-of-Change Gap**
-Threats, tools, and TTPs outpace static syllabi. DoD continues to push for better measurement & software/cyber metrics.
-
-<div class="highlight mt-4 text-sm">
+<div class="highlight text-sm">
 Current ranges lack realism, evaluations are manual/biased, and reporting isn't standardized or predictive.
 </div>
 

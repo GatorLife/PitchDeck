@@ -11,6 +11,7 @@ drawings:
 transition: slide-left
 mdc: true
 css: unocss
+favicon: ./GATOR_Icon_LessThan.png
 src: ./pages/1-title.md
 ---
 

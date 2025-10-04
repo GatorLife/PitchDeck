@@ -4,9 +4,9 @@ layout: default
 
 # **How GATOR Works: Operator to Commander Loop**
 
-<div class="mt-2">
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 80%;">
 
-<div class="flex gap-3 items-center justify-center mb-4">
+<div class="flex gap-3 items-center justify-center mb-6" style="max-width: 90%;">
 <div class="gator-card flex-1">
 <div class="text-primary font-bold text-sm">1. Environment Generation</div>
 <div class="text-xs mt-1">
@@ -50,6 +50,6 @@ Auto-captures against latest <strong>JQRs</strong>; surfaces predictive gaps
 
 </div>
 
-<div class="highlight mt-2 text-sm">
+<div class="highlight mt-6 text-sm" style="max-width: 90%;">
 <strong class="text-primary">Result:</strong> Commanders get defensible readiness data, operators get instant feedback, and units stay aligned to current standards.
 </div>
