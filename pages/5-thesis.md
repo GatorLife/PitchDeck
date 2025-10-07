@@ -14,24 +14,24 @@ class: text-center
 
 <div class="gator-card">
 <div class="text-primary text-lg font-bold mb-1">📋</div>
-<strong class="text-sm">Objective Grading</strong>
-<div class="text-xs text-muted mt-1">
+<strong class="text-md">Objective Grading</strong>
+<div class="text-sm text-muted mt-1">
 Doctrinal evaluation of free-form operator inputs
 </div>
 </div>
 
 <div class="gator-card">
 <div class="text-primary text-lg font-bold mb-1">🎮</div>
-<strong class="text-sm">Live, Adaptive Ranges</strong>
-<div class="text-xs text-muted mt-1">
+<strong class="text-md">Live, Adaptive Ranges</strong>
+<div class="text-sm text-muted mt-1">
 Environments that evolve with the operator
 </div>
 </div>
 
 <div class="gator-card">
 <div class="text-primary text-lg font-bold mb-1">📊</div>
-<strong class="text-sm">Readiness Analytics</strong>
-<div class="text-xs text-muted mt-1">
+<strong class="text-md">Readiness Analytics</strong>
+<div class="text-sm text-muted mt-1">
 Tied to roles & JQRs for commander truth data
 </div>
 </div>

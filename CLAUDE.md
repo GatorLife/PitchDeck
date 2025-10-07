@@ -24,10 +24,14 @@ npm install          # Install all dependencies (Slidev + Vue)
 
 ### Core Structure
 
-**slides.md** - Single markdown file containing all slides
-- Slides separated by `---`
-- Front matter at top configures theme, transitions, and metadata
-- Custom styling imported via `<style src="./style.css"></style>`
+**slides.md** - Main entry point that imports modular slide pages
+- Configures theme, transitions, and metadata in front matter
+- Each slide referenced via `src: ./pages/N-slide-name.md` syntax
+- Slides numbered 1-13 following the narrative structure
+
+**pages/** directory - Individual slide files (1-title.md through 13-call-to-action.md)
+- Each page is a standalone markdown file with its own front matter (`layout: default`, `layout: center`, etc.)
+- Each page imports style.css via `<style src="../style.css"></style>` at the top
 - Uses Slidev's markdown syntax with Vue components and HTML
 
 **style.css** - Complete custom theme implementation
@@ -125,17 +129,21 @@ All substantive claims must cite authoritative sources in `.citation` divs:
 ## Common Modifications
 
 ### Adding a New Slide
-1. Add separator `---` and layout front matter
-2. Start with h1 title (`# **Title**`)
-3. Keep spacing tight (`mt-2` for first content)
-4. Use `.grid-cols-2` for two-column layouts
-5. End with `.citation` if needed
+1. Create new file in `pages/` directory (e.g., `14-new-slide.md`)
+2. Add layout front matter and style import
+3. Start with h1 title (`# **Title**`)
+4. Keep spacing tight (`mt-2` for first content)
+5. Use `.grid-cols-2` for two-column layouts
+6. End with `.citation` if needed
+7. Reference the new page in `slides.md` with `---` separator and `src: ./pages/14-new-slide.md`
 
-Example:
+Example (pages/14-new-slide.md):
 ```markdown
 ---
 layout: default
 ---
+
+<style src="../style.css"></style>
 
 # **New Slide Title**
 
@@ -148,6 +156,13 @@ Content here
 <div class="citation">
 Source: Citation here
 </div>
+```
+
+Then in slides.md, add:
+```markdown
+---
+src: ./pages/14-new-slide.md
+---
 ```
 
 ### Preventing Content Overflow
@@ -167,10 +182,17 @@ Edit CSS variables in style.css under `:root`:
 ## Testing
 No automated tests. Visual QA via:
 1. Run `npm run dev`
-2. Navigate through all slides
+2. Navigate through all slides (use arrow keys or Space)
 3. Check for content overflow (especially on slides with lists/tables)
 4. Verify citations are visible at bottom
-5. Test in presenter mode (press `P` key)
+5. Test in presenter mode (press `P` key in browser)
+
+### Presenter Mode Shortcuts
+- **Arrow keys / Space** - Navigate slides
+- **P** - Toggle presenter mode (shows notes and next slide preview)
+- **F** - Toggle fullscreen
+- **O** - Toggle overview mode
+- **G** - Toggle grid view
 
 ## Deployment
 Configured for both Netlify and Vercel via `netlify.toml` and `vercel.json`. The build command is `npm run build` and output directory is `dist/`.

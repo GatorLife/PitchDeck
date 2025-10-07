@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# **Pilot Plan: 60–90 Days**
+# **Pilot Plan: 30–90 Days**
 
 <div class="grid-cols-2 mt-2">
 
@@ -11,10 +11,10 @@ layout: default
 <h3 class="mb-1">📋 Scope</h3>
 <div class="gator-card">
 <ul class="text-sm compact-list">
-<li><strong>Roles:</strong> 2–3 (e.g., DCO–ID, analytic, hunt)</li>
-<li><strong>Operators:</strong> 15–30 per role</li>
-<li><strong>Scenarios:</strong> 5–10 threat-informed exercises</li>
-<li><strong>Duration:</strong> 60–90 days end-to-end</li>
+<li><strong>Roles:</strong> 2 (Net, Host)</li>
+<li><strong>Operators:</strong> 3–5 per role</li>
+<li><strong>Questions:</strong> 10–15 threat-informed</li>
+<li><strong>Scenarios:</strong> 2-3 end-to-end</li>
 </ul>
 </div>
 

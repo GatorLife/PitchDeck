@@ -55,6 +55,6 @@ layout: default
 
 </div>
 
-<div class="highlight mt-2 text-sm">
+<div class="highlight mt-8 text-sm">
 <strong class="text-primary">Bottom line:</strong> GATOR deploys where you train—from unclass labs to JWICS enclaves—with mission-appropriate security controls.
 </div>

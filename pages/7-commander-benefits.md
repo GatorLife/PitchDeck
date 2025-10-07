@@ -7,7 +7,6 @@ layout: default
 <div class="grid-cols-2 mt-2">
 
 <div>
-
 <h3 class="mb-1">🎯 Defensible Readiness Picture</h3>
 <div class="gator-card">
 <ul class="text-sm compact-list">
@@ -17,19 +16,9 @@ layout: default
 <li>Audit trail for inspections</li>
 </ul>
 </div>
-
-<h3 class="mb-1 mt-2">⚖️ Comparability Across Squadrons</h3>
-<div class="gator-card">
-<ul class="text-sm compact-list">
-<li>Standardized rubrics + reference sets</li>
-<li>RBAC controls for examiner consistency</li>
-</ul>
-</div>
-
 </div>
 
 <div>
-
 <h3 class="mb-1">⚡ Faster OODA Loop Close</h3>
 <div class="gator-card">
 <ul class="text-sm compact-list">
@@ -39,14 +28,18 @@ layout: default
 <li>Time-to-complete metrics</li>
 </ul>
 </div>
-
-<div class="stat-box mt-2">
-<div class="stat-value">90%</div>
-<div class="stat-label">Target Rubric Agreement Rate</div>
 </div>
 
 </div>
 
+<div style="display: flex; flex-direction: column; align-items: center; width: 100%; margin-top: 0.5rem;">
+<h3 class="mb-1">⚖️ Comparability Across Squadrons</h3>
+<div class="gator-card" style="max-width: 600px;">
+<ul class="text-sm compact-list">
+<li>Standardized rubrics + reference sets</li>
+<li>RBAC controls for examiner consistency</li>
+</ul>
+</div>
 </div>
 
 <div class="citation">
