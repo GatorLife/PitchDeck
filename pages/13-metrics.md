@@ -2,12 +2,16 @@
 layout: default
 ---
 
+<style src="../style.css"></style>
+
+<div class="classification-header">UNCLASSIFIED</div>
+
 # **DoD Wide Metrics**
 
 <div class="grid-cols-2 mt-2">
 
 <div class="gator-card">
-<div class="text-primary font-bold">📊 GAO Finding</div>
+<div class="text-primary font-bold"><i data-lucide="bar-chart-3" class="lucide-icon-sm"></i> GAO Finding</div>
 <div class="mt-1">
 DoD has not historically measured or reported domain-level readiness (incl. cyber) in a way that supports commander truth data.
 </div>
@@ -15,7 +19,7 @@ DoD has not historically measured or reported domain-level readiness (incl. cybe
 </div>
 
 <div class="gator-card">
-<div class="text-primary font-bold">🔄 Standards Volatility</div>
+<div class="text-primary font-bold"><i data-lucide="refresh-cw" class="lucide-icon-sm"></i> Standards Volatility</div>
 <div class="mt-1">
 JQR/JCT&CS undergo regular update cycles; Services are notified—meaning checklists drift and local binders age fast.
 </div>
@@ -23,7 +27,7 @@ JQR/JCT&CS undergo regular update cycles; Services are notified—meaning checkl
 </div>
 
 <div class="gator-card">
-<div class="text-primary font-bold">⚖️ Subjectivity Risk</div>
+<div class="text-primary font-bold"><i data-lucide="scale" class="lucide-icon-sm"></i> Subjectivity Risk</div>
 <div class="mt-1">
 HHQ ESAP exists to ensure <em>objective</em> assessments—because unit-level variance is real.
 </div>
@@ -31,7 +35,7 @@ HHQ ESAP exists to ensure <em>objective</em> assessments—because unit-level va
 </div>
 
 <div class="gator-card">
-<div class="text-primary font-bold">🎯 Training Realism Gap</div>
+<div class="text-primary font-bold"><i data-lucide="target" class="lucide-icon-sm"></i> Training Realism Gap</div>
 <div class="mt-1">
 USCYBERCOM publicly states the need for <strong>more complex</strong> and realistic actors in PCTE scenarios.
 </div>
@@ -40,6 +44,4 @@ USCYBERCOM publicly states the need for <strong>more complex</strong> and realis
 
 </div>
 
-<div class="citation">
-Sources: GAO-23-106673 | USCYBERCOM GitLab | e-Publishing | DefenseScoop | PEO STRI
-</div>
+<div class="classification-footer">UNCLASSIFIED</div>

@@ -350,3 +350,78 @@ th {
 .slide-content > *:last-child:not(.citation) {
   margin-bottom: auto;
 }
+
+/* Classification Markings */
+.classification-header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gator-muted);
+  letter-spacing: 0.1em;
+  opacity: 0.3;
+  z-index: 100;
+}
+
+.classification-footer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gator-muted);
+  letter-spacing: 0.1em;
+  opacity: 0.3;
+  z-index: 100;
+}
+
+/* Lucide Icons */
+.lucide-icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke: var(--gator-primary);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+/* Large icons for feature cards */
+.lucide-icon-lg {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Small icons for inline use */
+.lucide-icon-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Icon in heading */
+h3 .lucide-icon,
+h3 .lucide-icon-sm,
+h3 .lucide-icon-lg {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 0.5rem;
+}
+
+/* Icon in div headings */
+div .lucide-icon,
+div .lucide-icon-sm {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 0.35rem;
+}
+
+/* Checkmark icons - make them green */
+i[data-lucide="check"],
+i[data-lucide="circle-check"],
+i[data-lucide="shield-check"] {
+  stroke: var(--gator-primary) !important;
+}

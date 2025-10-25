@@ -2,13 +2,17 @@
 layout: default
 ---
 
+<style src="../style.css"></style>
+
+<div class="classification-header">UNCLASSIFIED</div>
+
 # **Security & Deployment: Built for the Mission Set**
 
 <div class="grid-cols-2 mt-2">
 
 <div class="gator-card">
 
-<h3 class="mb-1">🔒 Enclave-First Architecture</h3>
+<h3 class="mb-1"><i data-lucide="shield" class="lucide-icon"></i> Enclave-First Architecture</h3>
 <div class="text-sm">
 
 **Model-Agnostic Design:**
@@ -31,7 +35,7 @@ layout: default
 
 <div class="gator-card">
 
-<h3 class="mb-1">✅ Compliance Posture</h3>
+<h3 class="mb-1"><i data-lucide="shield-check" class="lucide-icon"></i> Compliance Posture</h3>
 <div class="text-sm">
 
 **Security Controls:**
@@ -55,6 +59,8 @@ layout: default
 
 </div>
 
-<div class="highlight mt-8 text-sm">
-<strong class="text-primary">Bottom line:</strong> GATOR deploys where you train—from unclass labs to JWICS enclaves—with mission-appropriate security controls.
+<div class="highlight mt-8 text-sm" style="margin-top: 2rem;">
+<strong class="text-primary" >Bottom line:</strong> GATOR deploys where you train—from unclass labs to JWICS enclaves—with mission-appropriate security controls.
 </div>
+
+<div class="classification-footer">UNCLASSIFIED</div>

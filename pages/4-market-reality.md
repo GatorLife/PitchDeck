@@ -2,13 +2,13 @@
 layout: default
 ---
 
-# **Market Reality: We Train, But Can't Verify Effects**
+# **Current Solutions Are Insufficient**
 
 <div class="mt-6" style="display: flex; flex-direction: column; gap: 1.5rem; max-width: 70%; margin-left: auto; margin-right: auto;">
 
 <div class="gator-card">
 
-<h3 class="mb-1">PCTE: Necessary But Not Sufficient</h3>
+<h3 class="mb-1">PCTE</h3>
 <ul class="text-sm compact-list">
 <li>Provides maneuver space and distributed access</li>
 <li>Cybercom pushing toward <em>more complex, realistic actors</em></li>
@@ -16,7 +16,7 @@ layout: default
 </ul>
 
 <div class="text-primary mt-2 font-bold text-sm">
-The platform exists—measurement at speed is the bottleneck.
+Critical platform, but with significant overhead and cost
 </div>
 
 </div>
@@ -24,7 +24,7 @@ The platform exists—measurement at speed is the bottleneck.
 <div class="gator-card">
 
 <h3 class="mb-1">Scale Is Big</h3>
-<div class="stat-box mt-2">
+<div class="stat-box mt-4">
 <div class="stat-value">6,000+</div>
 <div class="stat-label">CMF Operators</div>
 </div>
@@ -35,8 +35,4 @@ PCTE supports thousands of operators—but training completion ≠ readiness pro
 
 </div>
 
-</div>
-
-<div class="citation">
-Sources: PEO STRI (PCTE Program) | go.ratio.exchange | DefenseScoop
 </div>

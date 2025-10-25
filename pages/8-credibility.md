@@ -2,13 +2,17 @@
 layout: default
 ---
 
+<style src="../style.css"></style>
+
+<div class="classification-header">UNCLASSIFIED</div>
+
 # **Credibility & Alignment**
 
-<div class="grid-cols-2 mt-2">
+<div class="grid-cols-2 mt-6">
 
 <div class="gator-card">
 
-<h3 class="mb-1">🎖️ Mission Match</h3>
+<h3 class="mb-1"><i data-lucide="medal" class="lucide-icon"></i> Mission Match</h3>
 <div class="text-sm">
 
 **Built for CMF Workflows:**
@@ -30,15 +34,15 @@ layout: default
 
 <div class="gator-card">
 
-<h3 class="mb-1">📋 Policy Fit</h3>
+<h3 class="mb-1"><i data-lucide="scroll" class="lucide-icon"></i> Policy Fit</h3>
 <div class="text-sm">
 
 **DoD Priorities:**
 <ul class="compact-list">
-<li>✅ Standardization of training/cert</li>
-<li>✅ Improved measurement frameworks</li>
-<li>✅ Cyber workforce resilience</li>
-<li>✅ Data-driven readiness reporting</li>
+<li>Standardization of training/cert</li>
+<li>Improved measurement frameworks</li>
+<li>Cyber workforce resilience</li>
+<li>Data-driven readiness reporting</li>
 </ul>
 
 **Alignment:**
@@ -49,13 +53,11 @@ GATOR operationalizes DoD CIO guidance on cyber workforce strategy at the tactic
 
 </div>
 
-<div class="mt-2 p-3 border-l-4 border-primary bg-card">
+<div class="mt-6 p-3 border-l-4 border-primary bg-card">
 <div class="text-sm">
 <strong class="text-primary">"We need better ways to measure cyber readiness—GATOR provides the tooling to make that real."</strong>
 </div>
 <div class="text-xs text-muted mt-1">— Aligned with DoD CIO Cyber Workforce Framework Strategy</div>
 </div>
 
-<div class="citation">
-Source: DoD CIO Cyber Workforce Strategy IP Factsheet (FY24)
-</div>
+<div class="classification-footer">UNCLASSIFIED</div>
