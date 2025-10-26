@@ -11,6 +11,7 @@
   --gator-muted: hsl(240, 5.03%, 64.90%);
   --gator-card: hsl(240, 5.88%, 10%);
   --gator-border: hsl(240, 3.70%, 15.88%);
+  --gator-ai-purple: hsl(270, 70%, 60%);
 
   /* Chart colors */
   --gator-chart-1: hsl(142.09, 70.56%, 45.29%);
@@ -235,6 +236,10 @@ blockquote {
 /* Text utilities */
 .text-center {
   text-align: center;
+}
+
+.text-xsm {
+  font-size: 0.7rem;
 }
 
 .text-sm {

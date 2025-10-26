@@ -22,7 +22,7 @@ Objective Cyber Readiness for the Joint Force
 
 
 <div class="mt-12 text-muted text-sm">
-Briefer: Cole, Founder
+Cole Russell
 </div>
 
 <div class="mt-2 text-muted text-sm">
