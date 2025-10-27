@@ -12,11 +12,11 @@ layout: default
 "If we had to mobilize a cyber team tomorrow, how do we prove that we are ready?"
 </div>
 
-<div class="highlight" style="margin-top: 2rem;">
-<strong>Problem:</strong> GAO has repeatedly found DoD lacks clear, domain-level readiness metrics and reporting—especially in <strong class="text-primary">cyber</strong>.
+<div v-click class="highlight" style="margin-top: 2rem;">
+<strong>Problem:</strong> Per GAO, DoD lacks clear, domain-level readiness metrics and reporting—especially in <strong class="text-primary">cyber</strong>.
 </div>
 
-<div class="mt-6">
+<div v-click class="mt-6" style="margin-top: 3rem;">
 
 **What this means for commanders:**
 <ul class="compact-list">
@@ -27,7 +27,7 @@ layout: default
 
 </div>
 
-<div class="mt-6 gator-card text-sm">
+<div v-click class="mt-6 gator-card text-sm" style="margin-top: 2.5rem;">
 <strong class="text-primary">Stat:</strong> Independent analysis argues Cyber Mission Force training shortfalls are largely measurement issues and have persisted since standards were established.
 </div>
 

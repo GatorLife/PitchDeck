@@ -57,7 +57,7 @@ layout: default
 
 </div>
 
-<div v-click class="highlight text-sm" style="margin-top: 2rem;">
+<div v-click class="highlight text-sm" style="margin-top: 1rem;">
 <strong>Success Criteria:</strong> Commanders can answer "Are we ready?" with immediate, quantitative evidence.
 </div>
 

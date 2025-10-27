@@ -8,13 +8,14 @@ layout: default
 
 # **Sources & References**
 
-<div style="display: flex; flex-direction: column; justify-content: center; min-height: 10vh;">
+<div style="display: flex; flex-direction: column; justify-content: center; ">
 
-<div class="text-sm">
+<div class="text-sm compact-list" style="line-height: 1.3;">
 
 **Government Reports:**
 - Government Accountability Office (GAO-23-106673) - DoD Cyber Readiness Metrics
 - DoD CIO Cyber Workforce Strategy IP Factsheet (FY24)
+- ACC ESAP Report, 252 COG CVA/H (30 Jan - 2 Feb 2025)
 
 **DoD Policy & Standards:**
 - USCYBERCOM GitLab - Joint Qualification Requirements (JQR)

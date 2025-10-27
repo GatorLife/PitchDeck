@@ -8,9 +8,9 @@ layout: default
 
 # **How GATOR Works**
 
-<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 50vh;">
+<div class="how-it-works-container">
 
-<div class="flex gap-2 items-center justify-center mb-6" style="max-width: 100%;">
+<div class="how-it-works-flow mb-6">
 <div v-click class="gator-card flex-1">
 <div class="text-primary font-bold text-base">1. Environment Generation</div>
 <div class="text-sm mt-1 mb-2">
@@ -66,7 +66,7 @@ Compare against latest <strong>JQRs</strong>; predict training gaps
 </div>
 </div>
 
-<div v-click class="highlight text-sm" style="max-width: 75%; text-align: center; margin-top: 2rem;">
+<div v-click class="highlight text-sm text-center mt-8" style="max-width: 75%;">
 <strong class="text-primary">Result:</strong> Evaluators save time, Operators learn through repetition, Commanders get defensible readiness data, and Units are standardized.
 </div>
 

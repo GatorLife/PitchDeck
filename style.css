@@ -44,21 +44,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+/* Fluid typography using clamp() for responsive scaling */
 h1 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   line-height: 1.1;
   margin-bottom: 0.75rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
   margin-bottom: 0.75rem;
   border-bottom: 2px solid var(--gator-primary);
   padding-bottom: 0.25rem;
 }
 
 h3 {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   margin-bottom: 0.5rem;
 }
 
@@ -139,12 +140,12 @@ blockquote {
   font-style: italic;
 }
 
-/* Card component */
+/* Card component - Responsive padding */
 .gator-card {
   background: var(--gator-card);
   border: 1px solid var(--gator-border);
   border-radius: 0.5rem;
-  padding: 0.75rem;
+  padding: 0.625rem; /* Tighter on mobile */
   box-shadow: var(--shadow-md);
   transition: all 0.3s;
 }
@@ -154,17 +155,71 @@ blockquote {
   box-shadow: var(--shadow-lg);
 }
 
-/* Grid layouts */
+@media (min-width: 768px) {
+  .gator-card {
+    padding: 0.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gator-card {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .gator-card {
+    padding: 1.25rem;
+  }
+}
+
+/* Grid layouts - Mobile-first responsive */
 .grid-cols-2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr; /* Stack on mobile */
   gap: 0.75rem;
 }
 
 .grid-cols-3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr; /* Stack on mobile */
   gap: 0.75rem;
+}
+
+/* Tablet: 768px+ (iPad portrait and larger) */
+@media (min-width: 768px) {
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr); /* 2 cols on tablet */
+    gap: 1rem;
+  }
+}
+
+/* Desktop: 1024px+ (iPad landscape, laptops) */
+@media (min-width: 1024px) {
+  .grid-cols-2 {
+    gap: 1.25rem;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* Large screens: 1440px+ (standard projectors, large monitors) */
+@media (min-width: 1440px) {
+  .grid-cols-2 {
+    gap: 1.5rem;
+  }
+
+  .grid-cols-3 {
+    gap: 1.5rem;
+  }
 }
 
 /* Flex utilities */
@@ -188,7 +243,7 @@ blockquote {
   gap: 1rem;
 }
 
-/* Spacing utilities */
+/* Responsive spacing utilities */
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -202,27 +257,63 @@ blockquote {
 }
 
 .mt-4 {
+  margin-top: 0.75rem; /* Reduced on mobile */
+}
+
+.mt-6 {
   margin-top: 1rem;
 }
 
 .mt-8 {
-  margin-top: 2rem;
+  margin-top: 1.25rem; /* Reduced on mobile */
 }
 
 .mt-12 {
-  margin-top: 3rem;
+  margin-top: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .mb-2 {
   margin-bottom: 0.5rem;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .mt-4 {
+    margin-top: 1rem;
+  }
+
+  .mt-8 {
+    margin-top: 2rem;
+  }
+
+  .mt-12 {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mt-8 {
+    margin-top: 2.5rem;
+  }
 }
 
 .p-4 {
@@ -238,40 +329,68 @@ blockquote {
   text-align: center;
 }
 
+/* Responsive text utilities with fluid scaling */
 .text-xsm {
-  font-size: 0.7rem;
+  font-size: clamp(0.625rem, 1.25vw, 0.7rem);
 }
 
 .text-sm {
-  font-size: 0.875rem;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
 }
 
 .text-lg {
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 2vw, 1.125rem);
 }
 
 .text-xl {
-  font-size: 1.25rem;
+  font-size: clamp(1.125rem, 2.25vw, 1.25rem);
 }
 
 .text-2xl {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
 }
 
 .text-muted {
   color: var(--gator-muted);
 }
 
-/* Citation/Footer text - Absolute positioned at bottom-left */
+/* Citation/Footer text - Responsive absolute positioning */
 .citation {
   position: absolute;
-  bottom: 30px;
-  left: 30px;
-  font-size: 0.7rem;
+  bottom: 20px; /* Reduced for mobile */
+  left: 20px;
+  right: 20px; /* Use right instead of max-width */
+  font-size: 0.65rem; /* Slightly smaller for mobile */
   color: var(--gator-muted);
   padding-top: 0.5rem;
   border-top: 1px solid var(--gator-border);
-  max-width: calc(100% - 60px); /* Prevent overflow on right edge */
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .citation {
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .citation {
+    bottom: 35px;
+    left: 35px;
+    right: 35px;
+  }
+}
+
+/* Safe area support for devices with notches */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .citation {
+    bottom: max(20px, env(safe-area-inset-bottom));
+    left: max(20px, env(safe-area-inset-left));
+    right: max(20px, env(safe-area-inset-right));
+  }
 }
 
 /* Stat/Metric boxes */
@@ -284,7 +403,7 @@ blockquote {
 }
 
 .stat-value {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem); /* Responsive scaling */
   font-weight: 700;
   color: var(--gator-primary);
   line-height: 1;
@@ -322,15 +441,16 @@ p {
   color: var(--gator-fg);
 }
 
-/* Table styling for compact display */
+/* Table styling for compact display - Responsive */
 table {
   width: 100%;
   border-collapse: collapse;
+  font-size: 0.7rem; /* Smaller on mobile */
 }
 
 th, td {
-  padding: 0.4rem 0.5rem;
-  font-size: 0.8rem;
+  padding: 0.3rem 0.4rem; /* Tighter on mobile */
+  font-size: inherit;
   line-height: 1.3;
 }
 
@@ -339,9 +459,29 @@ th {
   text-align: left;
 }
 
+@media (min-width: 768px) {
+  table {
+    font-size: 0.75rem;
+  }
+
+  th, td {
+    padding: 0.4rem 0.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  table {
+    font-size: 0.8rem;
+  }
+
+  th, td {
+    padding: 0.5rem 0.6rem;
+  }
+}
+
 /* Additional utility classes */
 .text-xs {
-  font-size: 0.7rem;
+  font-size: clamp(0.625rem, 1.25vw, 0.75rem);
 }
 
 /* Content wrapper for overflow protection */
@@ -356,13 +496,13 @@ th {
   margin-bottom: auto;
 }
 
-/* Classification Markings */
+/* Classification Markings - Responsive positioning */
 .classification-header {
   position: absolute;
-  top: 10px;
+  top: 15px; /* More space for mobile */
   left: 50%;
   transform: translateX(-50%);
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 700;
   color: var(--gator-muted);
   letter-spacing: 0.1em;
@@ -372,15 +512,38 @@ th {
 
 .classification-footer {
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 700;
   color: var(--gator-muted);
   letter-spacing: 0.1em;
   opacity: 0.3;
   z-index: 100;
+}
+
+@media (min-width: 768px) {
+  .classification-header {
+    top: 10px;
+    font-size: 0.75rem;
+  }
+
+  .classification-footer {
+    bottom: 10px;
+    font-size: 0.75rem;
+  }
+}
+
+/* Avoid notch areas on mobile */
+@supports (padding: env(safe-area-inset-top)) {
+  .classification-header {
+    top: max(15px, env(safe-area-inset-top));
+  }
+
+  .classification-footer {
+    bottom: max(15px, env(safe-area-inset-bottom));
+  }
 }
 
 /* Lucide Icons */
@@ -429,4 +592,143 @@ i[data-lucide="check"],
 i[data-lucide="circle-check"],
 i[data-lucide="shield-check"] {
   stroke: var(--gator-primary) !important;
+}
+
+/* Responsive container utilities for specific slides */
+.how-it-works-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: -4rem;
+  min-height: auto; /* Let content dictate height on mobile */
+}
+
+@media (min-width: 768px) {
+  .how-it-works-container {
+    min-height: 40vh; /* Only apply on larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .how-it-works-container {
+    min-height: 50vh;
+  }
+}
+
+.how-it-works-flow {
+  display: flex;
+  flex-direction: column; /* Stack on mobile */
+  gap: 1rem;
+  align-items: stretch;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .how-it-works-flow {
+    flex-direction: row;
+    gap: 0.75rem;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .how-it-works-flow {
+    gap: 1rem;
+  }
+}
+
+/* Hide arrows on mobile for flow diagrams */
+.how-it-works-flow > .text-primary.text-2xl {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .how-it-works-flow > .text-primary.text-2xl {
+    display: block;
+  }
+}
+
+.differentiators-table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.7rem;
+  overflow-x: auto; /* Allow horizontal scroll on mobile */
+  padding: 0.5rem 0;
+  margin-top: -2.5rem;
+}
+
+@media (min-width: 768px) {
+  .differentiators-table-container {
+    font-size: 0.8rem;
+    min-height: 35vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .differentiators-table-container {
+    font-size: 0.875rem;
+    min-height: 40vh;
+  }
+}
+
+/* Make table scrollable on mobile while keeping header visible */
+@media (max-width: 767px) {
+  .differentiators-table-container table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Aspect Ratio Handling */
+/* Ultra-wide displays (21:9) */
+@media (min-aspect-ratio: 21/9) {
+  .slidev-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+/* Square/portrait displays */
+@media (max-aspect-ratio: 4/3) {
+  .grid-cols-2,
+  .grid-cols-3 {
+    grid-template-columns: 1fr; /* Force single column */
+  }
+
+  h1 {
+    font-size: clamp(1.25rem, 3.5vw, 2rem);
+  }
+}
+
+/* 4:3 projectors (older equipment) */
+@media (aspect-ratio: 4/3) {
+  .slidev-layout {
+    padding: 2rem 2.5rem; /* Adjust padding for different ratio */
+  }
+
+  .grid-cols-2 {
+    gap: 0.875rem; /* Slightly less gap due to limited width */
+  }
+}
+
+/* Print/Export to PDF optimization */
+@media print {
+  .slidev-layout {
+    width: 1920px;
+    height: 1080px;
+    aspect-ratio: 16/9;
+  }
+
+  /* Ensure citations print properly */
+  .citation {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+  }
 }

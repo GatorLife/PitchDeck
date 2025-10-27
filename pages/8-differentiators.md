@@ -33,19 +33,19 @@ table i[data-lucide="alert-triangle"] {
 
 # **Differentiators vs. Ranges & Commercial Courses**
 
-<div class="text-sm" style="display: flex; flex-direction: column; justify-content: center; min-height: 40vh;">
+<div class="differentiators-table-container">
 
 | Capability | Traditional Ranges | Commercial Courses | **GATOR** |
 |------------|-------------------|-------------------|-----------|
 | **Grades Real Operator Inputs** | <i data-lucide="x" class="lucide-icon-sm"></i> Manual grading | <i data-lucide="x" class="lucide-icon-sm"></i> Multiple-choice | <i data-lucide="check" class="lucide-icon-sm"></i> AI-powered doctrinal grading |
 | **Adaptive Scenarios** | <i data-lucide="x" class="lucide-icon-sm"></i> Static configs | <i data-lucide="alert-triangle" class="lucide-icon-sm"></i> Limited paths | <i data-lucide="check" class="lucide-icon-sm"></i> Living ranges + threat intel |
-| **Instant Feedback** | <i data-lucide="x" class="lucide-icon-sm"></i> 2-week AAR lag | <i data-lucide="alert-triangle" class="lucide-icon-sm"></i> End-of-module | <i data-lucide="check" class="lucide-icon-sm"></i> Real-time chatbot |
-| **Predictive Analytics** | <i data-lucide="x" class="lucide-icon-sm"></i> Retroactive | <i data-lucide="x" class="lucide-icon-sm"></i> None | <i data-lucide="check" class="lucide-icon-sm"></i> Gap forecasting + prescriptions |
+| **Instant Feedback** | <i data-lucide="x" class="lucide-icon-sm"></i> 2-week AAR lag | <i data-lucide="alert-triangle" class="lucide-icon-sm"></i> End-of-module | <i data-lucide="check" class="lucide-icon-sm"></i> AI Cyber tutor |
+| **Predictive Analytics** | <i data-lucide="x" class="lucide-icon-sm"></i> Retroactive | <i data-lucide="x" class="lucide-icon-sm"></i> None | <i data-lucide="check" class="lucide-icon-sm"></i> Gap forecasting + recommendations |
 | **Commander Dashboard** | <i data-lucide="x" class="lucide-icon-sm"></i> Excel exports | <i data-lucide="x" class="lucide-icon-sm"></i> Student certs | <i data-lucide="check" class="lucide-icon-sm"></i> Role/mission readiness view |
 
 </div>
 
-<div v-click class="highlight mt-2 text-sm" style="margin-top: 1rem;">
+<div v-click class="highlight mt-4 text-sm" style="margin-top: -4rem;">
 <strong>Key Insight:</strong> GATOR closes the loop traditional ranges can't: from real operator inputs to instant, predictive readiness insights commanders can act on.
 </div>
 

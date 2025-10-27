@@ -17,7 +17,7 @@ layout: default
 
 **Built for CMF Workflows:**
 <ul class="compact-list">
-<li>Staffed by DoD-experienced technologists</li>
+<li>Created by DoD Cyber Operators</li>
 <li>Deep integration with JQR/JCT&CS cycles</li>
 <li>Tested with operational units</li>
 </ul>

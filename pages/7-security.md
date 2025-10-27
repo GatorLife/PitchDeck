@@ -6,7 +6,7 @@ layout: default
 
 <div class="classification-header">UNCLASSIFIED</div>
 
-# **Security & Deployment: Built for the Mission Set**
+# **Security & Deployment: Built for the Current Mission**
 
 <div class="grid-cols-2 mt-2">
 
@@ -17,10 +17,10 @@ layout: default
 
 **Model-Agnostic Design:**
 <ul class="compact-list">
-<li>On-prem LLMs (e.g., Ollama class)</li>
-<li>Disconnected labs supported</li>
-<li>SIPR/JWICS compatible</li>
-<li>Controlled cloud with ATO</li>
+<li>On-prem LLMs (e.g., GPT-OSS-20B)</li>
+<li>NIPR remote labs supported</li>
+<li>(On Approval) SIPR/JWICS compatible</li>
+<li>(In-Progress) Controlled cloud with ATO</li>
 </ul>
 
 **No External Dependencies:**
@@ -48,7 +48,7 @@ layout: default
 
 **Deployment Options:**
 <ul class="compact-list">
-<li>On-premises datacenter</li>
+<li>On-premises servers</li>
 <li>FedRAMP/IL cloud (with hosting ATO)</li>
 <li>Tactical edge (disconnected)</li>
 <li>Hybrid configurations</li>
@@ -59,7 +59,7 @@ layout: default
 
 </div>
 
-<div class="highlight mt-8 text-sm" style="margin-top: 2rem;">
+<div v-click class="highlight mt-8 text-sm" style="margin-top: 1rem;">
 <strong class="text-primary" >Bottom line:</strong> GATOR deploys where you train—from unclass labs to JWICS enclaves—with mission-appropriate security controls.
 </div>
 
