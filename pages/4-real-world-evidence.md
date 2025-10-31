@@ -7,7 +7,7 @@ layout: default
 # **Real-World Evidence**
 
 <div class="text-md text-primary mb-3" style="margin-top: 1rem;">
-252 Cyber Operations Group ESAP Report (Jan-Feb 2025) validates all three problem areas:
+Recent Air National Guard evaluations validate all three problem areas:
 </div>
 
 <div class="grid-cols-2 mt-2" style="margin-top: 2rem;">
